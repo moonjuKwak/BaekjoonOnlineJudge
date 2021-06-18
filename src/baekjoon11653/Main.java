@@ -7,7 +7,6 @@ import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.List;
 /*
-    moonjuKwak
     2부터 N까지 에라토스테네스의 체를 이용해 소수를 구한다.
     N을 2부터 N까지의 소수를 차례로 나눈다.
     이때 N을 소수로 나눴을 때의 나머지가 0이면 해당소수를 소인수에 추가하고 N을 N/소수로 업데이트 한다 .
