@@ -5,7 +5,20 @@ import java.io.BufferedWriter;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
+/*
+    풀이
+    "선택한다 / 선택하지 않는다"로 구현하였다.
+    지금 회차에 해당 연산자를 선택한다/ 선택하지 않는다를 결정한다.
+    이때 선택의 기준은 (각 연산자를 선택할 수 있는 횟수)>0 이다.
 
+    pickOperator(int index, int tempResult,int plusCount, int minusCount, int multiCount, int divCount )에서
+        index       : 수열에서 연산의 대상이 되는 숫자의 index
+        tempResult  : 0번째 부터 index-1번째까지의 숫자룰 연산한 결과
+        **Count     : 선택할 수 있는 연산자의 갯수
+
+
+
+ */
 public class Main1 {
     static int N;
     static int[] numArray;
