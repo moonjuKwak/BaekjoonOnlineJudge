@@ -28,6 +28,18 @@ public class Main {
             }
         }
 
+        int pathCount = 0;
+        //가로
+        for(int r= 0; r<N; r++){
+            if(canMakePath(r, 0, 0)) ++pathCount;
+        }
+        //세로
+        for(int c=0; c<N; c++){
+            if(canMakePath(0, c, 1)) ++pathCount;
+        }
+
+        bw.write(pathCount);
+        bw.flush();
 
     }
     public static boolean canMakePath(int x, int y, int d){
