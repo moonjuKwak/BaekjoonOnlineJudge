@@ -45,8 +45,8 @@ public class Main {
     public static boolean canMakePath(int x, int y, int d){
         int currentX = x;
         int currentY = y;
-        int beforeX = x-1;
-        int beforeY = y-1;
+        int beforeX = currentX - dx[d];
+        int beforeY = currentY - dy[d];
         int sameHeightCount = 1;
 
         while(true){
