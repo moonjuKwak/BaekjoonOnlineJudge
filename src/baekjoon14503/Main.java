@@ -6,24 +6,23 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class RobotCleanerDemo2  {
-    static  class Robot{
-        int x, y, d, cleanCount;
-        public Robot(int x, int y,int d, int cleanCount){
-            this.x = x;
-            this.y = y;
-            this.d= d;
-            this.cleanCount = cleanCount;
-        }
+class Robot{
+    int x, y, d, cleanCount;
+    public Robot(int x, int y,int d, int cleanCount){
+        this.x = x;
+        this.y = y;
+        this.d= d;
+        this.cleanCount = cleanCount;
     }
-
+}
+public class Main {
     static int N;
     static int M;
     static int[][] map;
     static final int CLEANED = -1;
     static final int NOT_CLEANED = 0;
     static final int WALL = 1;
-    static RobotCleanerDemo.Robot robot;
+    static Robot robot;
     static int[]dx ={-1,0,1,0};
     static int[]dy ={0,1,0,-1};
 
@@ -43,7 +42,7 @@ public class RobotCleanerDemo2  {
         int x = Integer.parseInt(st.nextToken());
         int y = Integer.parseInt(st.nextToken());
         int d = Integer.parseInt(st.nextToken());
-        robot = new RobotCleanerDemo.Robot(x, y, d, 0);
+        robot = new Robot(x, y, d, 0);
 
         //지도 초기화
         for (int r = 0; r < N; r++) {
